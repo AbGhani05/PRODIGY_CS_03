@@ -8,7 +8,7 @@ def check_password_complexity(password):
     digit_regex = re.compile(r'\d')  # Contains at least one digit
     special_char_regex = re.compile(r'[!@#$%^&*()\-_=+{};:,<.>/?\[\]\'\"\\|`]')  # Contains at least one special character
 
-    # Check each complexity rule
+    # Checking each complexity rule
     if not length_regex.search(password):
         return False, "Password must be at least 8 characters long"
     if not uppercase_regex.search(password):
